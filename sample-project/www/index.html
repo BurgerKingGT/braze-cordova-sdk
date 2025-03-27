@@ -48,6 +48,7 @@
                 <input type="text" id="changeUserInputId" autocorrect="off" autocapitalize="off" placeholder="External ID" />
                 <input type="text" id="sdkAuthSignature" autocorrect="off" autocapitalize="off" placeholder="SDK Auth Signature" />
                 <button id="changeUserBtn">Change User</button>
+                <button id="getUserIdBtn">Get User ID</button>
                 <button id="setSdkAuthBtn">Set SDK Auth Signature</button>
                 <br>
                 <input type="text" id="logCustomEventId" autocorrect="off" autocapitalize="off" placeholder="Event Name" />
@@ -82,16 +83,29 @@
                 <button id="getAllContentCardsBtn">Log all Content Cards</button>
                 <button id="logContentCardAnalyticsBtn">Log Content Cards Analytics for first Card</button>
                 <br>
+                <button id="subscribeToInAppMessageBtn">Subscribe to In-App Messages</button>
+                <button id="hideCurrentInAppMessageBtn">Hide Current In-App Message</button>
+                <br>
                 <input type="text" id="aliasName" autocorrect="off" autocapitalize="off" placeholder="Alias Name" />
                 <input type="text" id="aliasLabel" autocorrect="off" autocapitalize="off" placeholder="Alias Label" />
                 <button id="addAliasBtn">Add Alias</button>
                 <input type="text" id="languageCode" autocorrect="off" autocapitalize="off" placeholder="Language Code" />
                 <button id="setLanguageBtn">Set Language</button>
+                <br>
+                <input type="text" id="latitude" autocorrect="off" autocapitalize="off" placeholder="Latitude" />
+                <input type="text" id="longitude" autocorrect="off" autocapitalize="off" placeholder="Longitude" />
+                <input type="text" id="altitude" autocorrect="off" autocapitalize="off" placeholder="Altitude (optional)" />
+                <input type="text" id="horizontalAccuracy" autocorrect="off" autocapitalize="off" placeholder="Horizontal Accuracy" />
+                <input type="text" id="verticalAccuracy" autocorrect="off" autocapitalize="off" placeholder="Vertical Accuracy (optional)" />
+                <button id="setLastKnownLocationBtn">Set Last Known Location</button>
+                <button id="setLocationCustomAttributeBtn">Set Location Custom Attribute</button>
                 <button id="wipeData">Clears all SDK data</button>
                 <button id="enableSdk">Enables the SDK</button>
                 <button id="disableSdk">Disables the SDK</button>
                 <button id="getDeviceId">Gets the Device ID</button>
                 <button id="requestPushPermission">Request Push Permission (Android Only)</button>
+                <button id="updateTrackingPropertiesBtn">Update Tracking Properties (iOS Only)</button>
+                <button id="enableAdTrackingBtn">Enable Ad Tracking</button>
                 <br>
                 <input type="text" id="featureFlagInputId" autocorrect="off" autocapitalize="off" placeholder="Feature Flag ID" />
                 <button id="getFeatureFlagBtn">Get Feature Flag</button>
@@ -104,6 +118,9 @@
                     <option value="boolean">Boolean</option>
                     <option value="number">Number</option>
                     <option value="string">String</option>
+                    <option value="timestamp">Timestamp</option>
+                    <option value="jsonobject">JSON Object</option>
+                    <option value="image">Image</option>
                 </select>
                 <button id="getFeatureFlagPropertyBtn">Get Feature Flag Property</button>
             </div>

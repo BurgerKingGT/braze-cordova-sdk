@@ -17,6 +17,8 @@
 - (void)changeUser:(CDVInvokedUrlCommand *)command;
 - (void)setSdkAuthenticationSignature:(CDVInvokedUrlCommand *)command;
 - (void)subscribeToSdkAuthenticationFailures:(CDVInvokedUrlCommand *)command;
+- (void)subscribeToInAppMessage:(CDVInvokedUrlCommand *)command;
+- (void)hideCurrentInAppMessage:(CDVInvokedUrlCommand *)command;
 - (void)logCustomEvent:(CDVInvokedUrlCommand *)command;
 - (void)logPurchase:(CDVInvokedUrlCommand *)command;
 - (void)disableSdk:(CDVInvokedUrlCommand *)command;
@@ -24,6 +26,8 @@
 - (void)wipeData:(CDVInvokedUrlCommand *)command;
 - (void)requestImmediateDataFlush:(CDVInvokedUrlCommand *)command;
 - (void)getDeviceId:(CDVInvokedUrlCommand *)command;
+- (void)updateTrackingPropertyAllowList:(CDVInvokedUrlCommand *)command;
+- (void)setAdTrackingEnabled:(CDVInvokedUrlCommand *)command;
 
 /*-------Braze.User-------*/
 - (void)setFirstName:(CDVInvokedUrlCommand *)command;
@@ -35,6 +39,7 @@
 - (void)setHomeCity:(CDVInvokedUrlCommand *)command;
 - (void)setPhoneNumber:(CDVInvokedUrlCommand *)command;
 - (void)setLanguage:(CDVInvokedUrlCommand *)command;
+- (void)setLastKnownLocation:(CDVInvokedUrlCommand *)command;
 
 - (void)setPushNotificationSubscriptionType:(CDVInvokedUrlCommand *)command;
 - (void)setEmailNotificationSubscriptionType:(CDVInvokedUrlCommand *)command;
@@ -76,6 +81,9 @@
 - (void)getFeatureFlagBooleanProperty:(CDVInvokedUrlCommand *)command;
 - (void)getFeatureFlagStringProperty:(CDVInvokedUrlCommand *)command;
 - (void)getFeatureFlagNumberProperty:(CDVInvokedUrlCommand *)command;
+- (void)getFeatureFlagTimestampProperty:(CDVInvokedUrlCommand *)command;
+- (void)getFeatureFlagJSONProperty:(CDVInvokedUrlCommand *)command;
+- (void)getFeatureFlagImageProperty:(CDVInvokedUrlCommand *)command;
 - (void)logFeatureFlagImpression:(CDVInvokedUrlCommand *)command;
 
 @end
