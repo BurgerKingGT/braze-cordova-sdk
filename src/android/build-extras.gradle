@@ -25,6 +25,6 @@ ext.postBuildExtras = {
     apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
 
     android {
-       
+
     }
 }
